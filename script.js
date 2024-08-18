@@ -116,9 +116,9 @@ maternity.addEventListener('click', function () {
 let btn = document.getElementById('btn')
 btn.addEventListener("submit", function (event) {
     event.preventDefault()
-    const customer_name = document.getElementById('name')
-    const phone = document.getElementById('phone')
-    const customer_address = document.getElementById('address')
+    const customer_name = document.getElementById('name').value
+    const customer_phone = parseInt(document.getElementById('phone').value)
+    const customer_address = document.getElementById('address').value
     function istring(name, address) {
         if (typeof name == "string") {
             if ((!isNaN(name))) {
@@ -144,6 +144,6 @@ btn.addEventListener("submit", function (event) {
         }
 
     }
-    isnumber(phone)
+    isnumber(customer_phone)
 
 })
