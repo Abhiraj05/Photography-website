@@ -29,9 +29,9 @@
         </nav>
         <section>
             <div class="headline">
-                <p id="1"></p>
-                <p id="2"></p>
-                <p id="3"></p>
+                <p id="line_one"></p>
+                <p id="line_two"></p>
+                <p id="line_three"></p>
             </div>
         </section>
     </section>
@@ -91,16 +91,16 @@
             </div>
             <form action="">
                 <div>
-                    <input class="ip" type="text" placeholder="fullname">
+                    <input class="ip" type="text" placeholder="fullname" id="name" required>
                 </div>
                 <!-- <div>
                 <input class="ip" type="text" placeholder="email">
             </div> -->
                 <div>
-                    <input class="ip" type="text" placeholder="phone">
+                    <input class="ip" type="tel" placeholder="phone" id="phone" required>
                 </div>
                 <div>
-                    <select name="shoot type" id="">
+                    <select name="shoot type" id="shootype" required>
                         <option value="shoot type" default>shoot type</option>
                         <option value="pre-wedding">pre-wedding</option>
                         <option value="post-wedding">post-wedding</option>
@@ -110,13 +110,13 @@
                     </select>
                 </div>
                 <div>
-                    <input class="ip" type="date">
+                    <input class="ip" type="date" id="date" required>
                 </div>
                 <div>
-                    <textarea name="" id="" placeholder="address"></textarea>
+                    <textarea name="" id="address" placeholder="address"></textarea>
                 </div>
                 <div>
-                    <input class="btn" type="submit">
+                    <input class="btn" id="btn" type="submit">
                 </div>
             </form>
         </div>
@@ -130,7 +130,7 @@
 
         </div>
         <div class="footer-details">
-            <p> &#169;2023 photography. all rights are reserved</p>
+            <p> &#169;2023 flashpoint. all rights are reserved.</p>
         </div>
         <div class="footer-details">
             <p>made with &#9829; by abhiraj</p>

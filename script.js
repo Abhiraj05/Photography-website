@@ -1,37 +1,16 @@
 // // const image=document.querySelector('.headline')
 
-const headline1 = document.getElementById('1')
-const headline2 = document.getElementById('2')
-const headline3 = document.getElementById('3')
+const headline1 = document.getElementById('line_one')
+const headline2 = document.getElementById('line_two')
+const headline3 = document.getElementById('line_three')
 
 const st1 = "embrace the moments as"
 const st2 = "a journey through special"
 const st3 = "memories"
 let i = 0, p = 0, n = 0
-// setInterval(function () {
-//     if (i < st1.length) {
-//         headline1.innerHTML += `${st1[i]}`
-//     }
-//     i++
-//     if (i == st1.length) {
-//         setInterval(function () {
-//             if (p < st2.length) {
-//                 headline2.innerHTML += `${st2[p]}`
-//             }
-//             p++
-//             if (p == st2.length) {
-//                 setInterval(function () {
-//                     if (n < st3.length) {
-//                         headline3.innerHTML += `${st3[n]}`
-//                     }
-//                     n++
-//                 }, 100)
-//             }
-//         }, 100)
-//     }
-// }, 100)
 
-function third(){
+//typewritier code landing page
+function third() {
     setInterval(function () {
         if (n < st3.length) {
             headline3.innerHTML += `${st3[n]}`
@@ -41,14 +20,14 @@ function third(){
 }
 
 
-function second(){
+function second() {
     setInterval(function () {
         if (p < st2.length) {
             headline2.innerHTML += `${st2[p]}`
         }
         p++
         if (p == st2.length) {
-          third()
+            third()
         }
     }, 100)
 }
@@ -66,7 +45,7 @@ setInterval(function () {
 
 
 
-
+//gallery buttons
 const prewedd = document.querySelector('#prewedd')
 const postwedd = document.querySelector('#postwedd')
 const prebirth = document.querySelector('#prebirth')
@@ -77,7 +56,7 @@ const preweddht = document.querySelector('#prewedding')
 const postweddht = document.querySelector('#postwedding')
 const postbirthht = document.querySelector('#postbirthday')
 const prebirthht = document.querySelector('#prebirthday')
-const  maternityht= document.querySelector('#maternityph')
+const maternityht = document.querySelector('#maternityph')
 
 
 
@@ -105,7 +84,7 @@ prebirth.addEventListener('click', function () {
     preweddht.hidden = true
     postweddht.hidden = true
     postbirthht.hidden = true
-    prebirthht.hidden= false
+    prebirthht.hidden = false
     maternityht.hidden = true
 })
 
@@ -125,4 +104,46 @@ maternity.addEventListener('click', function () {
     postbirthht.hidden = true
     prebirthht.hidden = true
     maternityht.hidden = false
+})
+
+
+
+
+
+
+
+//form validation
+let btn = document.getElementById('btn')
+btn.addEventListener("submit", function (event) {
+    event.preventDefault()
+    const customer_name = document.getElementById('name')
+    const phone = document.getElementById('phone')
+    const customer_address = document.getElementById('address')
+    function istring(name, address) {
+        if (typeof name == "string") {
+            if ((!isNaN(name))) {
+                alert("Please Enter Valid Name")
+            }
+
+        }
+
+        if (typeof address == "string") {
+            if ((!isNaN(address))) {
+                alert("Please Enter Valid Address")
+            }
+
+        }
+    }
+
+    istring(customer_name,customer_address)
+
+    function isnumber(phone) {
+
+        if (isNaN(phone)) {
+            alert("Please The Valid Phone Number")
+        }
+
+    }
+    isnumber(phone)
+
 })
