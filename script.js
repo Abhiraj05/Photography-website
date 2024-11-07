@@ -113,37 +113,37 @@ maternity.addEventListener('click', function () {
 
 
 //form validation
-let btn = document.getElementById('btn')
-btn.addEventListener("submit", function (event) {
-    event.preventDefault()
-    const customer_name = document.getElementById('name').value
-    const customer_phone = parseInt(document.getElementById('phone').value)
-    const customer_address = document.getElementById('address').value
-    function istring(name, address) {
-        if (typeof name == "string") {
-            if ((!isNaN(name))) {
-                alert("Please Enter Valid Name")
-            }
-
+document.querySelector('form').addEventListener("submit", function (event) {
+    event.preventDefault();
+    
+    const customer_name = document.getElementById('name').value.trim();
+    const customer_phone = document.getElementById('phone').value.trim();
+    const customer_address = document.getElementById('address').value.trim();
+    
+    function validateString(value, fieldName) {
+        if (!isNaN(value) || value === "") {
+            alert(`Please enter a valid ${fieldName}`);
+            return false;
         }
-
-        if (typeof address == "string") {
-            if ((!isNaN(address))) {
-                alert("Please Enter Valid Address")
-            }
-
-        }
+        return true;
     }
 
-    istring(customer_name,customer_address)
-
-    function isnumber(phone) {
-
-        if (isNaN(phone)) {
-            alert("Please The Valid Phone Number")
+    function validatePhone(phone) {
+        if (isNaN(phone) || phone.length < 10) {
+            alert("Please enter a valid phone number");
+            return false;
         }
-
+        return true;
     }
-    isnumber(customer_phone)
 
-})
+    const isNameValid = validateString(customer_name, "name");
+    const isAddressValid = validateString(customer_address, "address");
+    const isPhoneValid = validatePhone(customer_phone);
+
+    if (isNameValid && isAddressValid && isPhoneValid) {
+  
+        alert("Form submitted successfully!");
+      
+    }
+});
+
