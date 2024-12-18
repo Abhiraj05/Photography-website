@@ -450,19 +450,19 @@ margin-bottom: 5vh;
 
 /* Media Queries for Mobile (Phones) */
 @media only screen and (max-width: 768px) {
-  /* General body and layout adjustments */
+
   body {
-    font-size: 14px; /* Decrease the body font size */
+    font-size: 14px; 
     padding: 0 10px;
   }
 
-  /* Logo adjustments */
+
   .logo-img {
-    width: 180px;  /* Smaller logo for mobile */
+    width: 180px;  
     height: 40px;
   }
 
-  /* Navbar adjustments */
+
   .nav {
     flex-direction: column;
     gap: 20px;
@@ -471,27 +471,27 @@ margin-bottom: 5vh;
   }
 
   .navli {
-    font-size: 14px;  /* Smaller text for navigation items */
-    gap: 40px;  /* Reduced gap */
+    font-size: 14px;  
+    gap: 40px;  
     text-align: center;
   }
 
   .btn {
-    padding: 10px 20px; /* Adjust button size */
+    padding: 10px 20px; 
     font-size: 14px;
   }
 
-  /* Adjust headline font size for mobile */
+
   .headline {
-    font-size: 40px;  /* Smaller headline font */
-    margin-top: 20vh;  /* Less margin at the top */
-    margin-bottom: 20vh;  /* Less margin at the bottom */
+    font-size: 40px; 
+    margin-top: 20vh; 
+    margin-bottom: 20vh;  
   }
 
-  /* Background image adjustments */
+
   .bgimg {
     background-size: cover;
-    height: 60vh; /* Reduced height of background image */
+    height: 60vh;
   }
 
   .line {
@@ -499,18 +499,18 @@ margin-bottom: 5vh;
     margin-bottom: 5vh;
   }
 
-  /* Adjust gallery images layout */
+
   .images {
     flex-direction: column;
     gap: 20px;
   }
 
   .size {
-    width: 80%;  /* Smaller image size */
+    width: 80%;  
     height: auto;
   }
 
-  /* Adjust headline-two for mobile */
+
   .headline-two {
     font-size: 24px;
     margin-bottom: 5vh;
@@ -521,14 +521,14 @@ margin-bottom: 5vh;
     margin-left: 5vw;
   }
 
-  /* Container adjustments for mobile */
+
   .container {
-    margin: 5vh 20px;  /* Less margin on sides */
+    margin: 5vh 20px;  
     padding: 15px;
     text-align: center;
   }
 
-  /* About section adjustments */
+  
   .about {
     flex-direction: column;
     align-items: center;
@@ -544,7 +544,7 @@ margin-bottom: 5vh;
     padding: 6px 12px;
   }
 
-  /* Footer adjustments */
+ 
   .ftr-head {
     font-size: 18px;
     margin-left: 0;
@@ -566,14 +566,14 @@ margin-bottom: 5vh;
     height: 25px;
   }
 
-  /* Form adjustments */
+
   .form {
     margin: 5vh 10vw;
     padding: 20px;
   }
 
   .ip {
-    width: 80%;  /* Form input width */
+    width: 80%;  
   }
 
   select {
@@ -584,7 +584,7 @@ margin-bottom: 5vh;
     width: 80%;
   }
 
-  /* Adjust gallery container */
+
   .gallery-photos {
     margin-left: 0;
     margin-right: 0;
@@ -601,10 +601,10 @@ margin-bottom: 5vh;
   }
 }
 
-/* Additional media query for very small screens, like those under 480px (phones in portrait mode) */
+
 @media only screen and (max-width: 480px) {
   .headline {
-    font-size: 30px;  /* Even smaller font size for very small screens */
+    font-size: 30px;  
   }
 
   .navli {
