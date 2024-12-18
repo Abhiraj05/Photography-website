@@ -446,3 +446,201 @@ margin-bottom: 5vh;
 
 }
 
+
+
+/* Media Queries for Mobile (Phones) */
+@media only screen and (max-width: 768px) {
+  /* General body and layout adjustments */
+  body {
+    font-size: 14px; /* Decrease the body font size */
+    padding: 0 10px;
+  }
+
+  /* Logo adjustments */
+  .logo-img {
+    width: 180px;  /* Smaller logo for mobile */
+    height: 40px;
+  }
+
+  /* Navbar adjustments */
+  .nav {
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .navli {
+    font-size: 14px;  /* Smaller text for navigation items */
+    gap: 40px;  /* Reduced gap */
+    text-align: center;
+  }
+
+  .btn {
+    padding: 10px 20px; /* Adjust button size */
+    font-size: 14px;
+  }
+
+  /* Adjust headline font size for mobile */
+  .headline {
+    font-size: 40px;  /* Smaller headline font */
+    margin-top: 20vh;  /* Less margin at the top */
+    margin-bottom: 20vh;  /* Less margin at the bottom */
+  }
+
+  /* Background image adjustments */
+  .bgimg {
+    background-size: cover;
+    height: 60vh; /* Reduced height of background image */
+  }
+
+  .line {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  /* Adjust gallery images layout */
+  .images {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .size {
+    width: 80%;  /* Smaller image size */
+    height: auto;
+  }
+
+  /* Adjust headline-two for mobile */
+  .headline-two {
+    font-size: 24px;
+    margin-bottom: 5vh;
+  }
+
+  .headline-three {
+    font-size: 22px;
+    margin-left: 5vw;
+  }
+
+  /* Container adjustments for mobile */
+  .container {
+    margin: 5vh 20px;  /* Less margin on sides */
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* About section adjustments */
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .adjust {
+    padding-top: 20px;
+    font-size: 12px;
+  }
+
+  .btnadjust {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  /* Footer adjustments */
+  .ftr-head {
+    font-size: 18px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-details {
+    font-size: 14px;
+  }
+
+  .logoscontainer {
+    margin-left: 0;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .sociallogo {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* Form adjustments */
+  .form {
+    margin: 5vh 10vw;
+    padding: 20px;
+  }
+
+  .ip {
+    width: 80%;  /* Form input width */
+  }
+
+  select {
+    width: 80%;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  /* Adjust gallery container */
+  .gallery-photos {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 5vh;
+    text-align: center;
+  }
+
+  .arrow {
+    font-size: 16px;
+  }
+
+  .bt {
+    font-size: 14px;
+  }
+}
+
+/* Additional media query for very small screens, like those under 480px (phones in portrait mode) */
+@media only screen and (max-width: 480px) {
+  .headline {
+    font-size: 30px;  /* Even smaller font size for very small screens */
+  }
+
+  .navli {
+    font-size: 12px;
+    gap: 20px;
+  }
+
+  .logo-img {
+    width: 160px;
+    height: 35px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .container {
+    margin: 5vh 10px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .about {
+    padding-top: 20px;
+  }
+
+  .adjust {
+    font-size: 10px;
+  }
+
+  .form {
+    margin: 5vh 5vw;
+  }
+
+  .ip, select, textarea {
+    width: 90%;
+  }
+}
